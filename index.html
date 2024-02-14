@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://api.fontshare.com/v2/css?f[]=general-sans@200,500,300,400,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5ad232060d.js" crossorigin="anonymous"></script>
+</head>
+<body onload="timer()">
+    <script>
+
+    const target = setTimeout(function() {
+    document.getElementById('popup').classList.add('show');
+         
+    
+      }, 15000);
+
+  function closeForm() {
+    document.getElementById('popup').classList.remove('show');
+  }
+        let hours=23;
+            let minutes= 59;
+            let seconds= 59;
+        function timer(){
+            
+            setInterval(() => {
+                if(hours!=-1){
+                    if(minutes==0){
+                        
+                        
+                        minutes==59;
+                        hours--;
+    
+                    }
+                    if(seconds==0){
+                        seconds=59;
+                        minutes--; 
+                        
+                    }
+                    seconds--;
+                        
+                    
+                    document.getElementById("timer").innerHTML=`${hours} : ${minutes} : ${seconds}`;
+
+                }else{
+
+                    document.getElementById("timer").innerHTML="OFFER ENDED";
+                }
+                
+                
+                
+            }, 1000);
+        }
+    </script>
+
+    <section id="popup">
+        <h1>FLAT 15% OFF</h1>
+        <p>Enter your details and win a coupon worth 15% off</p>
+        <form action="">
+            <input type="text" placeholder="Enter your phone">
+            <input type="text" placeholder="Enter your Email">
+            <button>Show me Coupon</button>
+        </form>
+    </section>
+    <section id="Hero">
+        <div class="heroicon">
+            <h3>Growth</h3>
+            <h3>School</h3>
+
+        </div>
+        <div class="herocontainer">
+            <div class="heroleft">
+                <h1>Discover a Consultant's Approach to Problem Solving</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, quod earum corrupti voluptatum quidem libero reprehenderit rerum fuga, nesciunt alias inventore ab distinctio nostrum velit provident voluptates maiores doloremque recusandae?</p>
+                <div class="timedata">
+                    <div class=timebox></div>
+                    <div class=timebox></div>
+                    <div class=timebox></div>
+                    
+                </div>
+                <button>Register Now at ₹ 499 <span>1999</span></button><br>
+                <div class="anchor"><a href="#">click here to get team discount</a></div> 
+            </div>
+            <div class="heroright">
+                <div class="image">
+                    <img src="https://picsum.photos/id/354/200/200" class="heroimg" alt="A bridge">
+
+                </div>
+                <div class="instructed">
+                    <span>Instructed by</span>
+
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+ 
+    <section id="About">
+        <div class="aboutcontainer">
+            <div class="header">
+                <h1>ABOUT <span>FOUNDERX</span></h1>
+                <p>The world needs your creativity and integrity.Don't put your dreams on hold.</p>
+                <p>Start your founder's journey today!</p>
+            </div>
+            <div class="body">
+                <div class="content dg"></div>
+                <div class="content dt">
+                    <h3><i class="fa-solid fa-caret-right"></i>Master a <span>structured approach</span>to building a tech venture</h3>
+                    <h3>Master a <span>structured approach</span>to building a tech venture</h3>
+                    <h3>Master a <span>structured approach</span>to building a tech venture</h3>
+                    <h3>Master a <span>structured approach</span>to building a tech venture</h3>
+                    <h3>Master a <span>structured approach</span>to building a tech venture</h3>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    <section id="Why">
+
+        <div class="cards-header">
+            <h1><span>But,</span></h1>
+            <h1 class="heading">Why should you become a Mindful Marketer?</h1>
+
+        
+        </div>
+        <div class="cards-container">
+            <div class="cards">
+                <img src="./icons/notes.png" alt="">
+                <p>Learn to look at the challenges through a different lens</p>
+            </div>
+            <div class="cards">
+                <img src="./icons/notes.png" alt="">
+                <p>Learn to look at the challenges through a different lens</p>
+            </div>
+            <div class="cards">
+                <img src="./icons/notes.png" alt="">
+                <p>Learn to look at the challenges through a different lens</p>
+            </div>
+            <div class="cards">
+                <img src="./icons/notes.png" alt="">
+                <p>Learn to look at the challenges through a different lens</p>
+            </div>
+            <div class="cards">
+                <img src="./icons/notes.png" alt="">
+                <p>Learn to look at the challenges through a different lens</p>
+            </div>
+
+
+        </div>
+
+    </section>
+    <section id="Timer">
+        <div class="timer-container">
+            <div class="time">
+                <h1>Time is running out.</h1>
+                <h1>Grab your spot <span>fast</span>!</h1>
+            </div>
+            <div class="timer"><h1 class="timer" id="timer"></h1>
+                <div class="timer-span">
+                    <span>Hour</span>
+                <span>Minutes</span>
+                <span>Seconds</span>
+                </div>
+            
+            </div>
+            
+            <button>Register Now at ₹ 499 <span>1999</span></button><br>
+        </div>
+    </section>
+    <section id="Buy">
+        <div class="buy-container">
+            <div class="info">
+                <h1>Crash course Launch Offer (Save INR 1799)</h1>
+                <ul>
+                    <li>Learn the toolkit of the professionals in just 3 hours</li>
+                    <li>Learn the toolkit of the professionals in just 3 hours</li>
+                    <li>Learn the toolkit of the professionals in just 3 hours</li>
+                </ul>
+            </div>
+            <div class="price">
+                <p>Price of the program</p>
+                <h1>₹499 <span>₹1999</span></h1>
+                <button>Register Now</button>
+                
+
+
+            </div>
+
+        </div>
+    </section> 
+
+
+</body>
+</html>
